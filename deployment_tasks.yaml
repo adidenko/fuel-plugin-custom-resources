@@ -1,0 +1,11 @@
+- id: create-custom-resources
+  version: 2.0.0
+  type: puppet
+  groups: ['/.*/']
+  requires: [deploy_start]
+  required_for: [deploy_end]
+  parameters:
+    puppet_manifest: puppet/manifests/create_custom_resources.pp
+    puppet_modules: puppet/modules:/etc/puppet/modules
+    timeout: 1200
+

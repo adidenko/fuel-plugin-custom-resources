@@ -1,0 +1,10 @@
+attributes:
+  metadata:
+    label: "Custom Resources Plugin"
+  yaml:
+    value: ''
+    label: 'Resources list (yaml)'
+    description: 'List of puppet resources in YAML format'
+    weight: 25
+    type: "text"
+
