@@ -1,6 +1,4 @@
 attributes:
-  metadata:
-    label: "Custom Resources Plugin"
   yaml:
     label: 'Resources list (yaml)'
     description: 'List of puppet resources in YAML format'

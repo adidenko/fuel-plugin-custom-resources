@@ -11,7 +11,7 @@
     'user123':
       ensure: present
 - type: notify
-  node_roles: ['(.*)?controller']
+  node_roles: ['compute']
   hash:
-    'this-is-controller':
-      message: 'this is controller'
+    'this-is-compute':
+      message: 'this is compute'
