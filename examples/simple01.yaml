@@ -1,0 +1,17 @@
+- type: file
+  node_roles: ['.*']
+  hash:
+    '/tmp/file1':
+      ensure: present
+    '/tmp/file2':
+      ensure: '/tmp/file1'
+- type: user
+  node_roles: ['.*']
+  hash:
+    'user123':
+      ensure: present
+- type: notify
+  node_roles: ['(.*)?controller']
+  hash:
+    'this-is-controller':
+      message: 'this is controller'

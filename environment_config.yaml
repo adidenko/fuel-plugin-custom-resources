@@ -2,9 +2,15 @@ attributes:
   metadata:
     label: "Custom Resources Plugin"
   yaml:
-    value: ''
     label: 'Resources list (yaml)'
     description: 'List of puppet resources in YAML format'
     weight: 25
-    type: "text"
+    type: "textarea"
+    validate: "yaml"
+    value: |
+      - type: notify
+        node_roles: ['(.*)?controller']
+        hash:
+          'this-is-controller':
+            message: 'this is controller'
 
