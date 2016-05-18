@@ -4,7 +4,7 @@ attributes:
   yaml:
     label: 'Resources list (yaml)'
     description: 'List of puppet resources in YAML format'
-    weight: 25
+    weight: 20
     type: "textarea"
     validate: "yaml"
     value: |
@@ -13,4 +13,9 @@ attributes:
         hash:
           'this-is-controller':
             message: 'this is controller'
-
+  yaml_data:
+    label: 'Resources list file (yaml)'
+    description: 'File with the list of puppet resources in YAML format'
+    weight: 30
+    type: "file"
+    value: "---"
